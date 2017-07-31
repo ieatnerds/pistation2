@@ -25,5 +25,5 @@ while True:
     if input_state is False:
         GPIO.output(20, GPIO.LOW)
         GPIO.output(16, GPIO.HIGH)
-        os.system("sudo shutdown -r now")
+        os.system('sudo reboot')
     time.sleep(.2)
