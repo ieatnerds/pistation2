@@ -13,7 +13,7 @@ import RPi.GPIO as GPIO
 import time
 import os
 
-GPIO.setmode(GPIO.BCM) 
+GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(20, GPIO.OUT)
@@ -27,3 +27,4 @@ while True:
         GPIO.output(16, GPIO.HIGH)
         os.system('sudo reboot')
     time.sleep(.2)
+    
