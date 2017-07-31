@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3551951-0902-4d04-bd3f-4c406676b854" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/powerscript.py" afterPath="$PROJECT_DIR$/powerscript.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updatescript.py" afterPath="$PROJECT_DIR$/updatescript.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,19 +26,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updatescript.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="updatescript.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updatescript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="508">
+              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
-                <element signature="e#262#285#0" expanded="true" />
+                <element signature="e#261#284#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="powerscript.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="powerscript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/powerscript.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="756">
@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/buttontest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="e#194#217#0" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
       <list>
         <option value="$PROJECT_DIR$/primenumbers.py" />
         <option value="$PROJECT_DIR$/buttontest.py" />
-        <option value="$PROJECT_DIR$/updatescript.py" />
         <option value="$PROJECT_DIR$/powerscript.py" />
+        <option value="$PROJECT_DIR$/updatescript.py" />
       </list>
     </option>
   </component>
@@ -272,7 +272,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -292,7 +292,7 @@
         <state relative-caret-position="248">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#262#285#0" expanded="true" />
+            <element signature="e#261#284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -332,7 +332,7 @@
         <state relative-caret-position="248">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#262#285#0" expanded="true" />
+            <element signature="e#261#284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -387,16 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buttontest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#194#217#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/primenumbers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1147">
@@ -407,12 +397,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/updatescript.py">
+    <entry file="file://$PROJECT_DIR$/buttontest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="589">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="e#262#285#0" expanded="true" />
+            <element signature="e#194#217#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -423,6 +413,16 @@
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#225#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updatescript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#261#284#0" expanded="true" />
           </folding>
         </state>
       </provider>
