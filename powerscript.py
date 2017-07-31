@@ -22,7 +22,7 @@ GPIO.setup(16, GPIO.OUT)
 GPIO.output(20, GPIO.HIGH)
 while True:
     input_state = GPIO.input(19)
-    if input_state == False:
+    if input_state is False:
         GPIO.output(20, GPIO.LOW)
         GPIO.output(16, GPIO.HIGH)
         os.system("sudo shutdown -r now")
