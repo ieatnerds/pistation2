@@ -27,4 +27,3 @@ while True:
         GPIO.output(16, GPIO.HIGH)
         os.system('sudo reboot')
     time.sleep(.2)
-    
