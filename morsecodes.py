@@ -3,6 +3,8 @@ Nicholas Kelly
 GPIO Test
 
 This program/ script will help in testing the GPIO pins on my
+my raspberry pi. It will send power through a specified pin as
+morse code
 """
 # Imports
 import RPi.GPIO as GPIO
@@ -28,16 +30,20 @@ d = {'a':('short', 'long'), 'b':('long', 'short', 'short', 'short'),
      'z':('long', 'long', 'short', 'short'), ' ':('slash',), '.':('slash',),
      '?':('slash',), ',':('slash',), "'":('slash',)}
 
+
 # Functions
 def on():
+    """define pin on."""
     GPIO.output(18, GPIO.HIGH)
 
 
 def off():
+    """define pin off."""
     GPIO.output(18, GPIO.LOW)
 
 
 def short():
+    """define what a short beep will be."""
     on()
     print('.')
     t.sleep(.5/2)
@@ -46,6 +52,7 @@ def short():
 
 
 def long():
+    """define what a long beep will be."""
     on()
     print('-')
     t.sleep(1/2)
@@ -54,16 +61,19 @@ def long():
 
 
 def slash():
+    """define in between words."""
     print('/')
     t.sleep(2.5/2)
 
 
 def find(letter):
+    """find letter in dictionary."""
     lst = d[letter]
     return lst
 
 
 def printletter(lst):
+    """"""
     print(lst)
     for code in lst:
         if code == 'short':
@@ -81,22 +91,13 @@ def breakdown(text):
 
 
 def main():
+    """gets user input an then prints it as morse code
+    through the gpio pins."""
     off()
     text = input('Please enter a message to be read in morse code.')
-    while True:
-        breakdown(text)
+    breakdown(text)
 
-
-def test():
-    """This test the responsiveness of the pins/fan led"""
-    for tmp in range(50):
-        on()
-        t.sleep(.1)
-        off()
-        t.sleep(.1)
+    input('Press enter to exit.')
+    GPIO.cleanup()
 
 main()
-
-input('Press enter to exit.')
-
-GPIO.cleanup()
