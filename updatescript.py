@@ -1,12 +1,14 @@
 """
-Nicholas Kelly
-update script
+Author(s): Nicholas Kelly(importantnk@gmaail.com)
+Date: July 10th, 2017
 
-This script will be used to autpo update the pistation2
-it will also cause the blue ledd to light up until the update is
-over.
+PiStation2 - Update Script
 
-this makes system calls to apt-get in order to update the machine
+This script will be used to auto update the PiStation2 when the eject button
+is pressed. It will also cause the blue LED of the eject button to light up
+until the update is over.
+
+This makes system calls to apt-get in order to update the Pi
 in every way I could think.
 """
 
@@ -17,7 +19,7 @@ import os
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(21, GPIO.OUT)
+GPIO.setup(21, GPIO.OUT)  # This pin controls a transistor for the LED.
 
 while True:
     input_state = GPIO.input(26)

@@ -1,10 +1,12 @@
 """
-Nicholas Kelly
-GPIO Test
+Author(s): Nicholas Kelly(importantnk@gmaail.com)
+Date: July 10th, 2017
+
+GPIO Test - MorseCode
 
 This program/ script will help in testing the GPIO pins on my
 my raspberry pi. It will send power through a specified pin as
-morse code
+morse code.
 """
 # Imports
 import RPi.GPIO as GPIO
@@ -33,17 +35,17 @@ d = {'a':('short', 'long'), 'b':('long', 'short', 'short', 'short'),
 
 # Functions
 def on():
-    """define pin on."""
+    """Define pin on."""
     GPIO.output(18, GPIO.HIGH)
 
 
 def off():
-    """define pin off."""
+    """Define pin off."""
     GPIO.output(18, GPIO.LOW)
 
 
 def short():
-    """define what a short beep will be."""
+    """Define what a short beep will be."""
     on()
     print('.')
     t.sleep(.5/2)
@@ -52,7 +54,7 @@ def short():
 
 
 def long():
-    """define what a long beep will be."""
+    """Define what a long beep will be."""
     on()
     print('-')
     t.sleep(1/2)
@@ -61,19 +63,19 @@ def long():
 
 
 def slash():
-    """define in between words."""
+    """Define in between words."""
     print('/')
     t.sleep(2.5/2)
 
 
 def find(letter):
-    """find letter in dictionary."""
+    """Find letter in dictionary."""
     lst = d[letter]
     return lst
 
 
 def printletter(lst):
-    """"""
+    """Displays a letter of morse code."""
     print(lst)
     for code in lst:
         if code == 'short':
@@ -85,14 +87,20 @@ def printletter(lst):
 
 
 def breakdown(text):
+    """
+    This will take the list of short and long beeps given from the dictionary,
+    and then calls the printletter function.
+    """
     for item in text:
         code = find(item.lower())
         printletter(code)
 
 
 def main():
-    """gets user input an then prints it as morse code
-    through the gpio pins."""
+    """
+    Gets user input an then prints it as morse code
+    through the gpio pins.
+    """
     off()
     text = input('Please enter a message to be read in morse code.')
     breakdown(text)

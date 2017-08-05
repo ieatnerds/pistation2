@@ -1,6 +1,8 @@
 """
-Nicholas Kelly
-Power script
+Author(s): Nicholas Kelly(importantnk@gmaail.com)
+Date: July 10th, 2017
+
+PiStation2 - Power Script
 
 This script is used to restart the pistation2
 
